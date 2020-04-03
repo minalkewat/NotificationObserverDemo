@@ -15,6 +15,9 @@
 		183DC2492437B7720060F37F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DC2472437B7720060F37F /* LaunchScreen.storyboard */; };
 		183DC2542437B7720060F37F /* NotificationObserverDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DC2532437B7720060F37F /* NotificationObserverDemoTests.swift */; };
 		183DC25F2437B7720060F37F /* NotificationObserverDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DC25E2437B7720060F37F /* NotificationObserverDemoUITests.swift */; };
+		183DC26D2437B7920060F37F /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DC26C2437B7920060F37F /* ViewControllerA.swift */; };
+		183DC26F2437B79D0060F37F /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DC26E2437B79D0060F37F /* ViewControllerB.swift */; };
+		183DC2712437C1D70060F37F /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DC2702437C1D70060F37F /* ViewControllerC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		183DC25A2437B7720060F37F /* NotificationObserverDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationObserverDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183DC25E2437B7720060F37F /* NotificationObserverDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverDemoUITests.swift; sourceTree = "<group>"; };
 		183DC2602437B7720060F37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183DC26C2437B7920060F37F /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
+		183DC26E2437B79D0060F37F /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		183DC2702437C1D70060F37F /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		183DC23B2437B7700060F37F /* NotificationObserverDemo */ = {
 			isa = PBXGroup;
 			children = (
+				183DC26C2437B7920060F37F /* ViewControllerA.swift */,
+				183DC26E2437B79D0060F37F /* ViewControllerB.swift */,
+				183DC2702437C1D70060F37F /* ViewControllerC.swift */,
 				183DC23C2437B7700060F37F /* AppDelegate.swift */,
 				183DC23E2437B7700060F37F /* SceneDelegate.swift */,
 				183DC2402437B7700060F37F /* ViewController.swift */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183DC2712437C1D70060F37F /* ViewControllerC.swift in Sources */,
+				183DC26D2437B7920060F37F /* ViewControllerA.swift in Sources */,
 				183DC2412437B7700060F37F /* ViewController.swift in Sources */,
+				183DC26F2437B79D0060F37F /* ViewControllerB.swift in Sources */,
 				183DC23D2437B7700060F37F /* AppDelegate.swift in Sources */,
 				183DC23F2437B7700060F37F /* SceneDelegate.swift in Sources */,
 			);

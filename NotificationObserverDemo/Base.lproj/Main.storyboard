@@ -1,24 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View ControllerA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcA" id="BYZ-38-t0r" customClass="ViewControllerA" customModule="NotificationObserverDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzp-nz-PJG">
+                                <rect key="frame" x="121.5" y="309.5" width="132" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go to next"/>
+                                <connections>
+                                    <action selector="goToNextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSW-uk-GBu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bzp-nz-PJG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qy-23-98Q"/>
+                            <constraint firstItem="bzp-nz-PJG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dOV-n6-AwJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="99"/>
+        </scene>
+        <!--View ControllerB-->
+        <scene sceneID="RMf-bd-xJN">
+            <objects>
+                <viewController storyboardIdentifier="vcB" id="a1F-Yo-emR" customClass="ViewControllerB" customModule="NotificationObserverDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ccq-qQ-Cwm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-BM-2ZA">
+                                <rect key="frame" x="118" y="309.5" width="139" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go to back"/>
+                                <connections>
+                                    <action selector="goToBackAction:" destination="a1F-Yo-emR" eventType="touchUpInside" id="huI-dz-xQ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGU-G9-Z3B">
+                                <rect key="frame" x="119" y="383" width="137" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go to Next"/>
+                                <connections>
+                                    <action selector="goToNextAction:" destination="a1F-Yo-emR" eventType="touchUpInside" id="Ejl-vh-rIy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eGU-G9-Z3B" firstAttribute="top" secondItem="Rsd-BM-2ZA" secondAttribute="bottom" constant="25.5" id="232-yr-tlp"/>
+                            <constraint firstItem="Rsd-BM-2ZA" firstAttribute="centerY" secondItem="Ccq-qQ-Cwm" secondAttribute="centerY" id="I97-VI-aIX"/>
+                            <constraint firstItem="eGU-G9-Z3B" firstAttribute="centerX" secondItem="Ccq-qQ-Cwm" secondAttribute="centerX" id="SWL-pg-TAO"/>
+                            <constraint firstItem="Rsd-BM-2ZA" firstAttribute="centerX" secondItem="Ccq-qQ-Cwm" secondAttribute="centerX" id="Zwx-cX-KW0"/>
+                            <constraint firstItem="J2P-UJ-VF5" firstAttribute="bottom" secondItem="eGU-G9-Z3B" secondAttribute="bottom" constant="236" id="e0f-ew-AZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J2P-UJ-VF5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zS1-6e-OAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="99"/>
+        </scene>
+        <!--View ControllerC-->
+        <scene sceneID="3W6-sk-iXQ">
+            <objects>
+                <viewController storyboardIdentifier="vcC" id="OYl-2G-DWd" customClass="ViewControllerC" customModule="NotificationObserverDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="grQ-hH-uDV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3j-bf-UbW">
+                                <rect key="frame" x="118" y="309.5" width="139" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go to back"/>
+                                <connections>
+                                    <action selector="goToBackAction:" destination="OYl-2G-DWd" eventType="touchUpInside" id="e25-OU-miW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="v3j-bf-UbW" firstAttribute="centerY" secondItem="grQ-hH-uDV" secondAttribute="centerY" id="aqV-Fs-ZGF"/>
+                            <constraint firstItem="v3j-bf-UbW" firstAttribute="centerX" secondItem="grQ-hH-uDV" secondAttribute="centerX" id="cpj-Ed-Fvg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N7u-XS-GCS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhb-1h-gBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="99"/>
         </scene>
     </scenes>
 </document>
